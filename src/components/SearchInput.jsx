@@ -8,7 +8,7 @@ import ImageIcon from "../assets/image.svg";
 
 const SearchInput = () => {
     const {query} = useParams();
-    const [searchQuery,setSerachQuery] = useState(query || "");
+    const [searchQuery,setSearchQuery] = useState(query || "");
     const navigate = useNavigate();
     const searchQueryHandler = (event) => {
        if(event.key === "Enter" && searchQuery.length > 0){
