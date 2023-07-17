@@ -23,7 +23,7 @@ const SearchInput = () => {
       <AiOutlineSearch size={18} color="#daa0a6" />
       <input
         type="text"
-        onChange={(e) => {return setSerachQuery(e.target.value)}}
+        onChange={(e) => {return setSearchQuery(e.target.value)}}
         onKeyUp={searchQueryHandler}
         value={searchQuery}
         autoFocus
@@ -31,7 +31,7 @@ const SearchInput = () => {
       />
       <div className="flex items-center gap-3">
         {searchQuery && (
-            <IoMdClose size={24} color="#70757a" className="cursor-pointer" onClick={()=>{setSerachQuery("")}}/>
+            <IoMdClose size={24} color="#70757a" className="cursor-pointer" onClick={()=>{setSearchQuery("")}}/>
         )}
         <img className="h-6 w-6 cursor-pointer" src={MicIcon} alt="Mic" />
         <img className="h-6 w-6 cursor-pointer" src={ImageIcon} alt="Serach Images" />
